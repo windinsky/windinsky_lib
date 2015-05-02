@@ -1,11 +1,9 @@
-// var Controller = require('controller');
 var Url = require('url');
 var config = {
 	basedOn: function(req){
 		return req.url.split('?')[0];
 	}
 };
-
 
 var route = {
 	rules:[],

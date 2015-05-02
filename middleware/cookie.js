@@ -1,4 +1,4 @@
-exports.processRequest = function(req,mid){
+module.exports = function(req,res,next){
     req.once('end',function(){
         if (req.cookie) return ;
         var cookie = {};
@@ -8,15 +8,12 @@ exports.processRequest = function(req,mid){
             req.cookie = parse(req.headers.cookie);
         }
     });
-	mid.emit('done');
-};
-
-exports.processResponse = function(res){
 	res.cookie = {
 		set: function(key,value,opt){
 			res.setHeader('Set-Cookie',serialize(key,value,opt));
 		}
-	}
+	};
+	next();
 };
 
 var parse = function(str) {
