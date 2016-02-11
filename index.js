@@ -8,3 +8,6 @@
 */
 
 module.exports = require('./lib/windinsky');
+
+global.Controller = require( './lib/controller' );
+global.Router = require( './lib/route' );
