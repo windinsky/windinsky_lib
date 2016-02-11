@@ -1,0 +1,9 @@
+{
+  "name": "windinsky_frw",
+  "description": "A nodejs mvc framework",
+  "homepage": "https://github.com/windinsky/windinsky_lib",
+  "version": "0.0.1",
+  "devDependencies": {
+    "formidable": "~1.0.15"
+  }
+}
