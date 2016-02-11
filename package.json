@@ -5,5 +5,27 @@
   "version": "0.0.1",
   "devDependencies": {
     "formidable": "~1.0.15"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "formidable": "~1.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/windinsky/windinsky_lib.git"
+  },
+  "keywords": [
+    "windinsky",
+    "nodejs",
+    "framework",
+    "mvc"
+  ],
+  "author": "windinsky",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/windinsky/windinsky_lib/issues"
   }
 }
